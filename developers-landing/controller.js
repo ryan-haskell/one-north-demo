@@ -3,12 +3,18 @@ var model = require('./model');
 
 module.exports = function(req, res) {
 
-    var developers = developersHelper.getAllDevelopers();
+    developersHelper.getAllDevelopers().then(function(developers) {
 
-    res.render('developers-landing/view', model(
-        'Developers',
-        'Look at these nerds.',
-        developers
-    ));
+        var data = {
+            developers: developers
+        };
+
+        res.render('developers-landing/view', model(
+            'Developers',
+            'Look at these nerds.',
+            data
+        ));
+
+    })
 
 };

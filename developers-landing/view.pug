@@ -4,16 +4,36 @@ block content
     section.hero.is-dark.is-bold.is-medium
         .hero-body
             .container
-                h1.title= title
-                h2.subtitle= subtitle
+                h1.title.is-1= title
+                h2.subtitle.is-3= subtitle
 
-    ul.container(style={'padding-top': '20px'})
-        each developer in developers
-            article.media
-                figure.media-left
-                    p.image.is-128x128
-                        img(src=developer.image)
-                .media-content
-                    .content(style={'padding': '20px'})
-                        h2= developer.name
-                        p= 'Favorite Language: ' + developer.favoriteLanguage
+    ul.container
+        developer-tile(v-for="dev in developers" v-bind:developer="dev")
+
+
+
+    script(type="text/x-template" id="developerTileTemplate")
+        include views/developer-tile.pug
+
+block scripts
+    script(type="text/javascript").
+
+        Vue.component('developerTile', {
+
+            template: '#developerTileTemplate',
+
+            props: ['developer']
+
+        });
+
+        var vm = new Vue({
+
+            el: '#app',
+
+            data: !{data},
+
+            created: function(){
+                console.log('Received ' + this.developers.length + ' developers.');
+            }
+
+        });

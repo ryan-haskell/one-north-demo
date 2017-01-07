@@ -6,6 +6,12 @@ var homepage = require('./homepage'),
     developersLanding = require('./developers-landing'),
     developersDetail = require('./developers-detail');
 
+pug.filters = {
+    'json': function(text, options) {
+        return JSON.stringify(text);
+    }
+};
+
 app.set('views', '.');
 app.set('view engine', 'pug');
 

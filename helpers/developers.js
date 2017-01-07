@@ -2,49 +2,68 @@ module.exports = {
 
     getDeveloperById: function(id) {
 
-        var developers = this.getAllDevelopers();
+        return this.getAllDevelopers().then(function(developers) {
 
-        var developer = developers[id];
+            var developersWithId = developers.filter(function(
+                developer) {
 
-        if (developer === undefined) {
+                return (developer.id === id);
 
-            return {
-                name: 'Nobody',
-                favoriteLanguage: 'Nothing',
-                gender: 'neither'
-            };
+            });
 
-        } else {
+            var developer = developersWithId[0];
 
-            return developer;
+            if (developer === undefined) {
 
-        }
+                return {
+                    name: 'Nobody',
+                    favoriteLanguage: 'Nothing',
+                    gender: 'neither'
+                };
+
+            } else {
+
+                return developer;
+
+            }
+
+        });
 
     },
 
     getAllDevelopers: function() {
 
-        return {
+        return Promise.resolve([
 
-            'ryan': {
+            {
+                id: 'ryan-haskell-glatz',
                 name: 'Ryan Haskell-Glatz',
-                favoriteLanguage: 'Elm',
+                role: 'Associate Developer',
                 image: 'http://onenorth.blob.core.windows.net/keystone/ryan2.png'
             },
 
-            'erik': {
+            {
+                id: 'erik-carron',
                 name: 'Erik Carron',
-                favoriteLanguage: 'Elm',
+                role: 'Developer',
                 image: 'http://onenorth.blob.core.windows.net/keystone/Erik-Carron_BW_Cropped.jpg'
             },
 
-            'emma': {
+            {
+                id: 'emma-birdsong',
                 name: 'Emma Birdsong',
-                favoriteLanguage: 'C#',
+                role: 'Associate Developer',
                 image: 'http://onenorth.blob.core.windows.net/keystone/emma2.png'
+            },
+
+            {
+                id: 'alex-hawley',
+                name: 'Alex Hawley',
+                role: 'Technical Lead',
+                image: 'http://onenorth.blob.core.windows.net/keystone/Alex_Hawley.jpg'
             }
 
-        };
+        ]);
 
     }
 
