@@ -29,19 +29,19 @@ module.exports = {
             'ryan': {
                 name: 'Ryan Haskell-Glatz',
                 favoriteLanguage: 'Elm',
-                gender: 'male'
+                image: 'http://onenorth.blob.core.windows.net/keystone/ryan2.png'
             },
 
             'erik': {
                 name: 'Erik Carron',
                 favoriteLanguage: 'Elm',
-                gender: 'male'
+                image: 'http://onenorth.blob.core.windows.net/keystone/Erik-Carron_BW_Cropped.jpg'
             },
 
             'emma': {
                 name: 'Emma Birdsong',
                 favoriteLanguage: 'C#',
-                gender: 'female'
+                image: 'http://onenorth.blob.core.windows.net/keystone/emma2.png'
             }
 
         };
