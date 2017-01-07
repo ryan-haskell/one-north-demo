@@ -8,7 +8,8 @@ block content
                 h2.subtitle.is-3= subtitle
 
     ul.container
-        developer-tile(v-for="dev in developers" v-bind:developer="dev")
+        developer-tile( v-for="dev in developers"
+                        v-bind:developer="dev" )
 
 
 
