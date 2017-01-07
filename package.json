@@ -1,0 +1,18 @@
+{
+  "name": "one-north-demo",
+  "version": "1.0.0",
+  "description": "Demo MVC/MVU hybrid approach",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryan Haskell-Glatz",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "pug": "^2.0.0-beta6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
