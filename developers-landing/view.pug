@@ -9,9 +9,20 @@ block content
                 h1.title.is-1= staticContent.title
                 h2.subtitle.is-3= staticContent.subtitle
 
-    ul.container
-        developer-tile( v-for="dev in developers"
-                        v-bind:developer="dev" )
+    .container
+        p.control.has-icon.has-icon-right(style={"margin": "20px"})
+            input.input.is-large(
+                type="text"
+                placeholder= staticContent.filterPlaceholder
+                v-model="filterQuery"
+                v-on:input="updateUrl($event.target.value)"
+                )
+            span.icon.is-medium
+                i.fa.fa-search
+
+        ul
+            developer-tile( v-for="dev in displayedDevelopers"
+                            v-bind:developer="dev" )
 
     script(type="text/x-template" id="developerTileTemplate")
         include views/developer-tile.pug
@@ -19,6 +30,8 @@ block content
 
 block scripts
     script(type="text/javascript").
+
+        var pugData = !{data};
 
         Vue.component('developerTile', {
 
@@ -32,7 +45,52 @@ block scripts
 
             el: '#app',
 
-            data: !{data},
+            data: {
+                developers: pugData.developers,
+                filterQuery: pugData.filterQuery
+            },
+
+            computed: {
+
+                displayedDevelopers: function() {
+
+                    var developers = this.developers;
+
+                    var filteredDevelopers =
+                        developers.filter(this.filterDevelopers);
+
+                    return filteredDevelopers;
+
+                }
+
+            },
+
+            methods: {
+
+                filterDevelopers: function(developer) {
+
+                    var lowercaseName = developer.name.toLowerCase();
+                    var lowercaseQuery = this.filterQuery.toLowerCase();
+
+                    return lowercaseName.indexOf(lowercaseQuery) > -1;
+
+                },
+
+                updateUrl: function(value) {
+
+                    if(value.length == 0) {
+
+                        window.history.replaceState({}, 'Developers', '/developers');
+
+                    } else {
+
+                        window.history.replaceState({}, 'Developers', '/developers?search=' + value);
+
+                    }
+
+                }
+
+            },
 
             created: function(){
                 console.log('Received ' + this.developers.length + ' developers.');

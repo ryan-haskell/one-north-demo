@@ -4,10 +4,12 @@ module.exports = function(staticContent, data) {
         staticContent: staticContent || {
             title: '',
             subtitle: '',
+            filterPlaceholder: '',
             app: {}
         },
         data: JSON.stringify(data || {
-            developers: []
+            developers: [],
+            filterQuery: ''
         })
     };
 
