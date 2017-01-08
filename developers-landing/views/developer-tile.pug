@@ -1,4 +1,4 @@
-a.box( v-bind:href='developer.id'
+a.box( v-bind:href='"/developers/" + developer.id'
        style={'margin': '20px'})
     article.media
         figure.media-left
@@ -9,4 +9,4 @@ a.box( v-bind:href='developer.id'
         .media-content
             .content
                 h2(v-html="developer.name")
-                p(v-html="developer.role")
+                p(v-html="developer.title")

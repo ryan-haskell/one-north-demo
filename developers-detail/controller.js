@@ -7,7 +7,17 @@ module.exports = function(req, res) {
 
     developersHelper.getDeveloperById(developerId).then(function(developer) {
 
-        res.render('developers-detail/view', model(developer));
+        var staticContent = {
+            developer: developer,
+            app: {
+                title: 'One North | ' + developer.name
+            }
+        };
+
+        var data = {};
+
+        res.render('developers-detail/view',
+            model(staticContent, data));
 
     });
 

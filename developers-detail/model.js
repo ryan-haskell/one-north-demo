@@ -1,7 +1,11 @@
-module.exports = function(developer) {
+module.exports = function(staticContent, data) {
 
     return {
-        developer: developer
+        staticContent: staticContent || {
+            developer: {},
+            app: {}
+        },
+        data: JSON.stringify(data || {})
     };
 
 };

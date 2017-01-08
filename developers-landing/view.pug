@@ -1,20 +1,21 @@
 extends ../index.pug
 
+
 block content
+
     section.hero.is-dark.is-bold.is-medium
         .hero-body
             .container
-                h1.title.is-1= title
-                h2.subtitle.is-3= subtitle
+                h1.title.is-1= staticContent.title
+                h2.subtitle.is-3= staticContent.subtitle
 
     ul.container
         developer-tile( v-for="dev in developers"
                         v-bind:developer="dev" )
 
-
-
     script(type="text/x-template" id="developerTileTemplate")
         include views/developer-tile.pug
+
 
 block scripts
     script(type="text/javascript").
