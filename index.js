@@ -2,14 +2,17 @@ var express = require('express'),
     app = express(),
     pug = require('pug');
 
-var homepage = require('./homepage'),
-    developersLanding = require('./developers-landing'),
+var developersLanding = require('./developers-landing'),
     developersDetail = require('./developers-detail');
 
 app.set('views', '.');
 app.set('view engine', 'pug');
 
-app.get('/', homepage.controller);
+app.get('/', function(req, res) {
+
+    res.redirect('/developers');
+
+});
 
 app.get('/developers', developersLanding.controller);
 
