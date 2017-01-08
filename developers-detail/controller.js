@@ -10,7 +10,8 @@ module.exports = function(req, res) {
         var staticContent = {
             developer: developer,
             app: {
-                title: 'One North | ' + developer.name
+                title: 'One North | ' + (developer.firstName +
+                    ' ' + developer.lastName)
             }
         };
 

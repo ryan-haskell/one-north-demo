@@ -15,24 +15,16 @@ block content
                 type="text"
                 placeholder= staticContent.filterPlaceholder
                 v-model="filterQuery"
-                v-on:input="updateUrl($event.target.value)"
+                v-on:input="onFilterQueryInput($event.target.value)"
                 )
             span.icon.is-medium
                 i.fa.fa-search
 
         p.control.has-addons
-            sort-button( label="First Name"
-                         value="firstName"
-                         v-bind:sort-options="sortOptions"
-                         v-on:sort-by="sortBy" )
-            sort-button( label="Last Name"
-                         value="lastName"
-                         v-bind:sort-options="sortOptions"
-                         v-on:sort-by="sortBy" )
-            sort-button( label="Title"
-                         value="title"
-                         v-bind:sort-options="sortOptions"
-                         v-on:sort-by="sortBy" )
+            sort-button( label="First Name" value="firstName" )
+            sort-button( label="Last Name" value="lastName" )
+            sort-button( label="Title" value="title" )
+
         hr
 
         ul
@@ -71,9 +63,15 @@ block scripts
 
             template: '#sortButtonTemplate',
 
-            props: ['label', 'value', 'sortOptions'],
+            props: ['label', 'value'],
 
             computed: {
+
+                sortOptions: function(){
+
+                    return this.$store.state.sortOptions;
+
+                },
 
                 iconClasses: function(){
 
@@ -91,7 +89,7 @@ block scripts
 
                 sortBy: function() {
 
-                    this.$emit('sort-by', this.value);
+                    this.$store.dispatch('updateSort', this.value);
 
                 }
 
@@ -99,20 +97,89 @@ block scripts
 
         })
 
-        var vm = new Vue({
+        Vue.use(Vuex);
 
-            el: '#app',
+        var store = new Vuex.Store({
 
-            data: {
+            state: {
+
                 developers: pugData.developers,
+
                 filterQuery: pugData.filterQuery,
+
                 sortOptions: {
                     value: 'firstName',
                     ascending: true
                 }
+
             },
 
+            mutations: {
+
+                setFilterQuery: function(state, newFilterQuery) {
+
+                    state.filterQuery = newFilterQuery;
+
+                },
+
+                setSortOptionsValue: function(state, sortValue) {
+
+                    if (state.sortOptions.value == sortValue) {
+                        state.sortOptions.ascending = !state.sortOptions.ascending;
+                    } else {
+                        state.sortOptions = {
+                            value: sortValue,
+                            ascending: true
+                        }
+                    }
+
+                }
+
+            },
+
+            actions: {
+
+                updateFilterQuery: function(context, newFilterQuery) {
+
+                    context.commit("setFilterQuery", newFilterQuery);
+
+                },
+
+                updateSort: function(context, sortValue) {
+
+                    context.commit('setSortOptionsValue', sortValue);
+
+                }
+
+            }
+
+        });
+
+        var vm = new Vue({
+
+            el: '#app',
+
+            store: store,
+
             computed: {
+
+                developers: function(){
+
+                    return this.$store.state.developers;
+
+                },
+
+                filterQuery: function(){
+
+                    return this.$store.state.filterQuery;
+
+                },
+
+                sortOptions: function(){
+
+                    return this.$store.state.sortOptions;
+
+                },
 
                 displayedDevelopers: function() {
 
@@ -159,6 +226,14 @@ block scripts
 
                 },
 
+                onFilterQueryInput: function(filterQuery) {
+
+                    this.updateUrl(filterQuery);
+
+                    this.$store.dispatch('updateFilterQuery', filterQuery);
+
+                },
+
                 updateUrl: function(value) {
 
                     if(value.length == 0) {
@@ -169,19 +244,6 @@ block scripts
 
                         window.history.replaceState({}, 'Developers', '/developers?search=' + value);
 
-                    }
-
-                },
-
-                sortBy: function(value){
-
-                    if (this.sortOptions.value == value) {
-                        this.sortOptions.ascending = !this.sortOptions.ascending;
-                    } else {
-                        this.sortOptions = {
-                            value: value,
-                            ascending: true
-                        }
                     }
 
                 },
