@@ -1,379 +1,418 @@
 [{
     "id": "pete-amundson",
-    "name": "Pete Amundson",
     "title": "Technical Strategist",
     "image": "http://onenorth.blob.core.windows.net/keystone/Pete-Amundson_BW2.png",
     "bio": "As a Technical Strategist at One North, Pete serves as a key technical contact throughout all his client engagements. He considers the technical needs of his clients alongside the broader scope of a company’s brand, marketing and general business needs. His close attention to the ever-changing technology landscape helps clients stay on top of their audiences’ evolving information consumption habits.",
     "facts": [
         "<strong>Favorite color:&nbsp;</strong><span style=\"background-color: #cd1922; color: #fff;\">&nbsp;#cd1922&nbsp;</span>",
         "<strong>What you wanted to be when you were little:</strong>&nbsp;An astronaut"
-    ]
+    ],
+    "firstName": "Pete",
+    "lastName": "Amundson"
 }, {
     "id": "emma-birdsong",
-    "name": "Emma Birdsong",
     "title": "Associate Developer",
     "image": "http://onenorth.blob.core.windows.net/keystone/emma2.png",
     "bio": "As an Associate Developer, Emma will use her build-up of knowledge to create and improve solutions for clients through the implementation of web technologies.&nbsp; Her knowledge of front-end design and nodejs gives Emma a unique perspective and the opportunity to contribute to her team throughout a project timeline.&nbsp;",
     "facts": [
         "<strong>Favorite movie:</strong><em> Fight Club</em>, <em>The Royal Tenenbaums</em>, and <em>Bring It On</em>",
         "<strong>Most unusual job</strong>: In high school, I was the “popcorn girl” at a local bank. I literally just made popcorn and gave it to customers every Friday afternoon."
-    ]
+    ],
+    "firstName": "Emma",
+    "lastName": "Birdsong"
 }, {
     "id": "michael-blaha",
-    "name": "Michael Blaha",
     "title": "Architect",
     "image": "http://onenorth.blob.core.windows.net/keystone/Michael-Blaha_BW.jpg",
     "bio": "Michael Blaha is an Architect&nbsp; at One North, bringing his skills in both front and back-end development to craft extraordinary digital experiences for our clients. In his free time, he enjoys making video games and has designed, coded and released two games on the Windows Phone platform.",
     "facts": [
         "<strong>Favorite movie:</strong> Big Trouble in Little China",
         "<strong>Favorite Chicago spot:</strong> Soldier Field"
-    ]
+    ],
+    "firstName": "Michael",
+    "lastName": "Blaha"
 }, {
     "id": "keegan-bowers",
-    "name": "Keegan Bowers",
     "title": "Developer",
     "image": "http://onenorth.blob.core.windows.net/keystone/Keegan-Bowers_BW.jpg",
     "bio": "As a Developer at One North, Keegan works to build digital properties for our clients. With over six years in cross-platform web development, Keegan enjoys working with his team to produce quality materials that meet and exceed client expectations. Keegan has a Bachelor's of Science in Computer Science from Heriot-Watt University in Edinburgh, Scotland.",
     "facts": [
         "<strong>Three hobbies:&nbsp;</strong>Car enthusiast, self-taught mechanic, amateur astronomer",
         "<b>One more hobby:&nbsp;</b>Noob home beer brewer (I have too many hobbies.)"
-    ]
+    ],
+    "firstName": "Keegan",
+    "lastName": "Bowers"
 }, {
     "id": "erik-carron",
-    "name": "Erik Carron",
     "title": "Developer",
     "image": "http://onenorth.blob.core.windows.net/keystone/Erik-Carron_BW_Cropped.jpg",
     "bio": "As a Developer at One North, Erik provides technical assistance to new and ongoing client projects. He brings his wide range of technical expertise and experience to his role at One North. Erik graduated from Purdue University with a degree in Computer Engineering.",
     "facts": [
         "<strong>Fun fact:</strong> My first name is John, however, I go by my middle name Erik.",
         "<strong>Coach Erik:</strong> I coach the boys lacrosse team at Downers Grove South High School."
-    ]
+    ],
+    "firstName": "Erik",
+    "lastName": "Carron"
 }, {
     "id": "michael-ciacco",
-    "name": "Michael Ciacco",
     "title": "Systems Engineer",
     "image": "http://onenorth.blob.core.windows.net/keystone/Michael-Ciacco_BW-Cropped.jpg",
     "bio": "As a Systems Engineer at One North, Michael's responsibilities include the configuration, maintenance and 24/7 support of our clients' digital experiences.&nbsp;He understands the importance of maintaining business-critical applications, and ensures that they are up and running at all times.",
     "facts": [
         "<strong>Extracurricular activity:&nbsp;</strong>Riding my vintage late 70's red Roland bicycle around the city",
         "<strong>Favorite dessert: </strong>Gelato"
-    ]
+    ],
+    "firstName": "Michael",
+    "lastName": "Ciacco"
 }, {
     "id": "ethel-crosby",
-    "name": "Ethel Crosby",
     "title": "Head of Technology Operations",
     "image": "http://onenorth.blob.core.windows.net/keystone/Ethel-Crosby_BW.jpg",
     "bio": "As Head of Technology Operations at One North Interactive, Ethel is responsible for the management and execution of leading digital technology solutions and software product management for B2B relationship-based businesses. Never one to shy away from a challenge, Ethel once zip-lined, upside down, in a rain forest in Costa Rica.",
     "facts": [
         "<strong>Favorite movie quote:&nbsp;</strong>\"With great power comes great responsibility.\" - Spiderman",
         "<strong>Favorite vending machine snack: </strong>Reeses Pieces"
-    ]
+    ],
+    "firstName": "Ethel",
+    "lastName": "Crosby"
 }, {
     "id": "chris-elston",
-    "name": "Chris Elston",
     "title": "Technical Lead",
     "image": "http://onenorth.blob.core.windows.net/keystone/blank_man (1).jpg",
     "bio": "As Technical Lead, Chris uses his digital expertise to offer smart solutions as well as mentor his team. Chris has worked with numerous platforms, languages and systems that give him a unique perspective to build innovative sites for clients.",
     "facts": [
         "<strong>Fun fact:</strong> I spent a semester in Bonn, Germany back in college.",
         "<strong>Favorite hobby:</strong> I’ve been brewing my own beer, off and on, since 2000"
-    ]
+    ],
+    "firstName": "Chris",
+    "lastName": "Elston"
 }, {
     "id": "eric-frus",
-    "name": "Eric Frus",
     "title": "Managing Architect",
     "image": "http://onenorth.blob.core.windows.net/keystone/Eric-Frus.jpg",
     "bio": "Eric Frus is a Managing Architect at One North, leading a team of developers and working on the architecture of web applications and custom data integration solutions. He prides himself in having the cleanest desk in the office (a prize he awarded to himself).",
     "facts": ["<strong>Favorite movie:</strong> Office Space",
         "<strong>Favorite Chicago spot:</strong> 1 N Dearborn Street, Suite 650"
-    ]
+    ],
+    "firstName": "Eric",
+    "lastName": "Frus"
 }, {
     "id": "ryan-haskell-glatz",
-    "name": "Ryan Haskell-Glatz",
     "title": "Associate Developer",
     "image": "http://onenorth.blob.core.windows.net/keystone/ryan2.png",
     "bio": "As an Associate Developer, Ryan is responsible for the implementation of specified features designed with his team.&nbsp; Through collaboration, he helps provide efficient and effective solutions through skillful technology implementation practices.",
     "facts": [
         "<strong>Favorite movie quote</strong>: “You keep using that word… I do not think it means what you think it means.” – Inigo Montoya, Princess Bride",
         "<strong>Favorite Chicago spot</strong>: Millennium Park"
-    ]
+    ],
+    "firstName": "Ryan",
+    "lastName": "Haskell-Glatz"
 }, {
     "id": "alex-hawley",
-    "name": "Alex Hawley",
     "title": "Technical Lead",
     "image": "http://onenorth.blob.core.windows.net/keystone/Alex_Hawley.jpg",
     "bio": "As Technical Lead, Alex leads the planning, implementation and deployment of custom web solutions across multiple platforms.&nbsp; He is certified in both Sitecore and Sitefinity content management systems, and works with clients to establish goals for their desired applications, building robust implementations to meet those goals.",
     "facts": [
         "<strong>Favorite hobby:</strong> Running. I’ve ran over 23 marathons which included running 12 in 2013.",
         "<strong>Favorite travel experience:</strong> Taking a trip out to the west coast to run along Highway 1 on the Pacific Ocean. If you don’t want to run on Highway 1, I would strongly recommend at least driving down the coast."
-    ]
+    ],
+    "firstName": "Alex",
+    "lastName": "Hawley"
 }, {
     "id": "rene-hernandez",
-    "name": "Rene Hernandez",
     "title": "Senior Front-End Developer",
     "image": "http://onenorth.blob.core.windows.net/keystone/Rene-Hernandez.jpg",
     "bio": "Rene is a Senior Front-End Developer at One North, ensuring client satisfaction through visually appealing web pages and digital design. An avid tomato-lover, Rene enjoys taking care of his tomato plant when he isn’t coding away amongst his fellow FEDs.",
     "facts": [
         "<strong>Favorite movie quote:&nbsp;</strong>\"Get to the choppa!\" - Arnold Schwarzenegger,&nbsp;<em>Predator</em>",
         "<strong>Favorite breakfast food: </strong>Vegetable skillet with eggs over-easy (the hashbrowns can make or break this dish).<em><br></em>"
-    ]
+    ],
+    "firstName": "Rene",
+    "lastName": "Hernandez"
 }, {
     "id": "ryan-horner",
-    "name": "Ryan Horner",
     "title": "Managing Director, Technology",
     "image": "http://onenorth.blob.core.windows.net/keystone/ryan-horner.jpg",
     "bio": "As Managing Director of Technology, Ryan is responsible for overseeing One North’s strategy related to technical applications, systems and client implementations. He got his start at age seven, programming an Apple IIe.",
     "facts": [
         "<strong>Last thing you geeked-out about:&nbsp;</strong>This happens on a daily basis, oftentimes to the internet of things coming to life and novel uses of the technology-enabled sharing economy –&nbsp;or some combination of the two.",
         "<strong>Most unusual job:</strong> I grew up on a working farm, so I've had lots of unusual jobs: baling straw, sweeping bins, cleaning a cattle barn, etc.&nbsp;"
-    ]
+    ],
+    "firstName": "Ryan",
+    "lastName": "Horner"
 }, {
     "id": "yesuah-iniguez",
-    "name": "Yesuah Iniguez",
     "title": "Developer",
     "image": "http://onenorth.blob.core.windows.net/keystone/blank_man (1).jpg",
     "bio": "As a Developer, Yesuah is responsible for the continued maintenance and development of client websites. With a diverse background in design, development and server experience, he works closely with his team to assure that projects run smoothly. &nbsp;",
     "facts": [
         "<strong>Favorite movie:</strong> Shutter (Not the American re-make)",
         "<strong>Super power you wish you had:</strong> The ability to heal like wolverine. My body does not like sports, and MRIs are expensive."
-    ]
+    ],
+    "firstName": "Yesuah",
+    "lastName": "Iniguez"
 }, {
     "id": "craig-jacobs",
-    "name": "Craig Jacobs",
     "title": "Developer",
     "image": "http://onenorth.blob.core.windows.net/keystone/Craig-Jacobs_BW.jpg",
     "bio": "As a Developer at One North, Craig provides ongoing support and knowledge to assist our clients in achieving their business goals. Solving problems and anticipating client needs, he is able to guide our clients towards lasting technological solutions with advanced and innovative technologies.",
     "facts": [
         "<strong>Favorite breakfast food:</strong> I don’t eat breakfast, but I am a huge proponent of eating multiple lunches.",
         "<strong>What you wanted to be when you were little:</strong> A superhero"
-    ]
+    ],
+    "firstName": "Craig",
+    "lastName": "Jacobs"
 }, {
     "id": "vinu-krishnaswamy",
-    "name": "Vinu Krishnaswamy",
     "title": "Architect",
     "image": "http://onenorth.blob.core.windows.net/keystone/Vinu-Krishnaswamy_BW.jpg",
     "bio": "Vinu is an Architect at One North, responsible for overseeing multiple development projects and architecting and implementing full life cycle digital strategies. Fun fact: he can speak three languages fluently and two more in a way that irritates native speakers.",
     "facts": ["<strong>Favorite season:</strong> Summer – love the beach.",
         "<strong>Super power:</strong> Ability to breathe underwater"
-    ]
+    ],
+    "firstName": "Vinu",
+    "lastName": "Krishnaswamy"
 }, {
     "id": "tom-mahr",
-    "name": "Tom Mahr",
     "title": "Senior Developer",
     "image": "http://onenorth.blob.core.windows.net/keystone/Tom-Mahr_BW.jpg",
     "bio": "As a Developer at One North, Tom builds and maintains websites and applications for our clients. By collaborating with his team, he is able to provide best possible solutions with efficient and well-practiced implementation capabilities.",
     "facts": ["<strong>Favorite movie</strong>: <em>Royal Tenenbaums</em>",
         "<em></em><strong>Favorite breakfast food</strong>: Eggs Benedict (with Homemade Hollandaise Sauce, not the powder mixed stuff)"
-    ]
+    ],
+    "firstName": "Tom",
+    "lastName": "Mahr"
 }, {
     "id": "kyle-marek",
-    "name": "Kyle Marek",
     "title": "Developer",
     "image": "http://onenorth.blob.core.windows.net/keystone/Kyle_Marek.jpg",
     "bio": "Kyle brings years of experience working with .NET and web-associated technologies to his role as a Developer at One North. Constantly striving to achieve his clients’ needs and goals, Kyle uses various front-end and back-end technologies.",
     "facts": [
         "<strong>Fun fact:</strong> In my spare time, I like going to concerts and collect vinyl. I have collected over 100 records in the past year alone.",
         "<strong>What you wanted to be when you were little:</strong> Ninja astronaut"
-    ]
+    ],
+    "firstName": "Kyle",
+    "lastName": "Marek"
 }, {
     "id": "kyle-mattimore",
-    "name": "Kyle Mattimore",
     "title": "Developer",
     "image": "http://onenorth.blob.core.windows.net/keystone/Kyle-Mattimore_BW_Cropped.jpg",
     "bio": "As a Developer at One North, Kyle \"solves problems and builds cool things.\" He received his Computer Science degree from the University of Michigan and considers himself a self-taught network/security geek.",
     "facts": [
         "<strong>Fun fact:&nbsp;</strong>I have a hobbyist recording studio and play around with making music. Some evidence of this can be seen <a href=\"https://www.youtube.com/user/kylemattimore\" target=\"_blank\">here</a>.",
         "<strong>Favorite sport to play:&nbsp;</strong>I will go to any lengths for a good game of Ultimate Frisbee."
-    ]
+    ],
+    "firstName": "Kyle",
+    "lastName": "Mattimore"
 }, {
     "id": "adam-moericke",
-    "name": "Adam Moericke",
     "title": "Senior Systems Engineer",
     "image": "http://onenorth.blob.core.windows.net/keystone/Adam-Moericke.jpg",
     "bio": "As a Senior Systems Engineer at One North, Adam helps provide a stable and high performing environment for the client websites that One North hosts.",
     "facts": [
         "<strong>School and major:</strong> University of Wisconsin-Madison / Computer Engineering",
         "<strong>Last thing you geeked out about:</strong> Did you know that within the next 30 years, you'll be able to \"ingest\" information by simply taking a pill? You can watch MIT Media Lab Founder Nicholas Negroponte's prediction during this <a href=\"http://www.ted.com/talks/nicholas_negroponte_a_30_year_history_of_the_future\" target=\"_blank\">TedTalk</a>"
-    ]
+    ],
+    "firstName": "Adam",
+    "lastName": "Moericke"
 }, {
     "id": "alex-morask",
-    "name": "Alex Morask",
     "title": "Associate Developer",
     "image": "http://onenorth.blob.core.windows.net/keystone/Alex_Morask.jpg",
     "bio": "As an Associate Developer at One North, Alex assists in the process of building out new technological solutions, as well as improving existing applications that help clients better engage with customers and prospects.&nbsp; He started his career as a marketing consultant, giving him a unique perspective to see problems and solutions from the client’s point-of-view.&nbsp;",
-    "facts": []
+    "facts": [],
+    "firstName": "Alex",
+    "lastName": "Morask"
 }, {
     "id": "manny-nelson",
-    "name": "Manny Nelson",
     "title": "Senior Developer",
     "image": "http://onenorth.blob.core.windows.net/keystone/Manny-Nelson.jpg",
     "bio": "As a Senior Developer at One North, Manny is primarily tasked with building extraordinary digital experiences from initial project assignment to completion. He works to provide advanced technical guidance from years of experience in digital development and maintains user-friendly capabilities for One North and our clients.",
     "facts": [
         "<strong>Favorite season:&nbsp;</strong>Fall - beautiful, great temperatures in the Midwest, football season, Halloween, apple cider, my birthday - all great things.",
         "<strong>Favorite movie:&nbsp;</strong>Big fan of any Christopher Nolan films. And, conversely, I also enjoy&nbsp;most Woody Allen flicks."
-    ]
+    ],
+    "firstName": "Manny",
+    "lastName": "Nelson"
 }, {
     "id": "steven-nicholson",
-    "name": "Steven Nicholson",
     "title": "Developer",
     "image": "http://onenorth.blob.core.windows.net/keystone/Steven-Nicholson_BW.jpg",
     "bio": "As a Developer at One North, Steven develops and tests code-based solutions for clients. He works with an advanced knowledge of computer programming and understanding of digital systems.",
     "facts": ["<strong>Favorite season:</strong> Fall",
         "<strong>Favorite breakfast food:</strong> Pigs in a Blanket"
-    ]
+    ],
+    "firstName": "Steven",
+    "lastName": "Nicholson"
 }, {
     "id": "michael-o'laughlin",
-    "name": "Michael O'Laughlin",
     "title": "Head of QA &amp; Managed Applications",
     "image": "http://onenorth.blob.core.windows.net/keystone/Michael-OLaughlin_BW.jpg",
     "bio": "As Head of QA &amp; Managed Applications, Michael is responsible for delivering One North digital experiences to clients and creating both web applications and custom data integration solutions. Michael’s favorite Chicago spot is at the United Center, watching the Hawks in the playoffs.",
     "facts": [
         "<strong>Favorite movie quote:</strong> “Great moments...are born from great opportunity. And that's what you have here tonight, boys. That's what you've earned here tonight. One game. If we played 'em ten times, they might win nine. But not this game; not tonight.” - Miracle",
         "<strong>What you wanted to be when you were little:</strong> A firefighter"
-    ]
+    ],
+    "firstName": "Michael",
+    "lastName": "O'Laughlin"
 }, {
     "id": "zach-peer",
-    "name": "Zach Peer",
     "title": "Director, Client Systems",
     "image": "http://onenorth.blob.core.windows.net/keystone/zach-peer.jpg",
     "bio": "Zach Peer is the Director of Technology and Client and Internal Systems at One North Interactive. He establishes and maintains the appropriate policies, procedures and controls for One North’s hosted offerings and works to ensure the availability, security and performance of the hosting environment – the hosting environment that he modeled out of Legos (playing with Legos is one of his passions, both with his kids and without).",
     "facts": [
         "<strong>If I were a vegetable:</strong>&nbsp;I'd be a Cucumber because they are cool (and tasty on sandwiches).",
         "<strong>Last thing you geeked-out about:</strong> Backyard Chickens"
-    ]
+    ],
+    "firstName": "Zach",
+    "lastName": "Peer"
 }, {
     "id": "alex-pershteyn",
-    "name": "Alex Pershteyn",
     "title": "Architect",
     "image": "http://onenorth.blob.core.windows.net/keystone/Alex-Pershteyn.jpg",
     "bio": "As an Architect, Alex is responsible for overseeing the implementation, testing and ongoing support of web-based projects. When he’s not coding away on JavaScript, ASP.Net or what-have-you, he is flying off to distant lands, adding to the growing list of countries to which he’s traveled.",
     "facts": [
         "<strong>What you wanted to be when you were little:</strong>&nbsp;A World Traveler",
         "<strong>Favorite movie:</strong> Pulp Fiction"
-    ]
+    ],
+    "firstName": "Alex",
+    "lastName": "Pershteyn"
 }, {
     "id": "ben-pomeranz",
-    "name": "Ben Pomeranz",
     "title": "Technical Lead",
     "image": "http://onenorth.blob.core.windows.net/keystone/Ben-Pomeranz.jpg",
     "bio": "As Technical Lead, Ben builds front-end and behind-the-scenes components for One North's clients and enjoys scanning the technology horizon for new framework opportunities. He is also a comic-book fan, sci-fi geek and goes every year to Comic Con.",
     "facts": [
         "<strong>What you wanted to be when you were little:</strong> Spiderman",
         "<strong>Super power:</strong> Ability to banter well with supervillains"
-    ]
+    ],
+    "firstName": "Ben",
+    "lastName": "Pomeranz"
 }, {
     "id": "rob-reilley",
-    "name": "Rob Reilley",
     "title": "Senior Developer",
     "image": "http://onenorth.blob.core.windows.net/keystone/Rob-Reilley_BW_cropped.jpg",
     "bio": "Rob brings over 20 years of experience working in various types of digital environments and technologies to his role as a Senior Developer at One North. He perpetually strives to come up with the best solution for each of his clients’ needs. Rob is a certified Sitecore Developer and received his degree in Computer Information Systems from DeVry University.",
     "facts": [
         "<strong>Favorite team:</strong> I’m a huge Bears fan, and I’ve met many former players while collecting autographs.",
         "<strong>Favorite hobby:</strong> I’m addicted to running. I’ve ran many races anywhere from 1 mile up to a 50k."
-    ]
+    ],
+    "firstName": "Rob",
+    "lastName": "Reilley"
 }, {
     "id": "joe-reiser",
-    "name": "Joe Reiser",
     "title": "Technical Support Engineer",
     "image": "http://onenorth.blob.core.windows.net/keystone/Joe-Reiser_BW_Cropped.jpg",
     "bio": "As a Technical Support Engineer at One North, Joe ensures the technology to achieve maximum business effectiveness is efficient, practical and – most importantly – working. He brings over 15 years of personal IT experience to the company as well as more than five years of corporate support in an Enterprise setting.",
     "facts": [
         "<strong>Hobbies:</strong> Amateur astronomy and astrophotography, fishing, trying new restaurants and working out!"
-    ]
+    ],
+    "firstName": "Joe",
+    "lastName": "Reiser"
 }, {
     "id": "rikin-shah",
-    "name": "Rikin Shah",
     "title": "Technical Lead",
     "image": "http://onenorth.blob.core.windows.net/keystone/Rikin-Shah.jpg",
     "bio": "As Technical Lead at One North, Rikin brings his passion for coding and technology to debug websites, data integration errors and SEO issues for both One North and our clients. He works with other members of Team Technology to provide the best technical solution that both aligns with client requirements and enables a great user experience.",
     "facts": ["<strong>Favorite hobby</strong>: Gaming and traveling",
         "<strong>Favorite movie</strong>: <em>The Godfather</em>"
-    ]
+    ],
+    "firstName": "Rikin",
+    "lastName": "Shah"
 }, {
     "id": "karthik-singh",
-    "name": "Karthik Singh",
     "title": "Developer",
     "image": "http://onenorth.blob.core.windows.net/keystone/Karthik-Singh_BW.jpg",
     "bio": "As a Developer, Karthik is responsible for the continued maintenance as well as new feature additions to current client websites. He also helps resolve client issues with respect to their digital experiences while continually seeking to enhance and upgrade features and applications.",
     "facts": [
         "<strong>Fun fact:</strong> I like to play and produce music in my free time. Currently, that’s been mainly around guitar, but I’m hoping to expand and learn more instruments with time.",
         "<strong>Education:</strong> I graduated from the University of Illinois at Urbana-Champaign with a major in Statistics and a minor in Computer Science.&nbsp;"
-    ]
+    ],
+    "firstName": "Karthik",
+    "lastName": "Singh"
 }, {
     "id": "mike-skutta",
-    "name": "Mike Skutta",
     "title": "Architect",
     "image": "http://onenorth.blob.core.windows.net/keystone/Mike_Skutta.jpg",
     "bio": "As an Architect within the Technology Labs group at One North, Mike works to research, test and integrate new technologies for both One North and its clients. He is also a Sitecore Technology MVP and holds more than 14 years of experience architecting, designing, developing software and leading technology teams. Based in Florida, Mike is often seen wheeling around the office via our robot.",
     "facts": ["<strong>Favorite vending machine snack:</strong> Doritos",
         "<strong>Most unusual job:</strong>&nbsp;Working as a Serf at Medieval Times"
-    ]
+    ],
+    "firstName": "Mike",
+    "lastName": "Skutta"
 }, {
     "id": "ian-tannehill",
-    "name": "Ian Tannehill",
     "title": "Developer",
     "image": "http://onenorth.blob.core.windows.net/keystone/Ian_Tannehill.jpg",
     "bio": "As a Developer at One North, Ian provides technical assistance to both new and ongoing clients at One North. He brings over four years of experience in full stack development to his role. Ian attended Marquette University, receiving a Bachelors of Science in Computer Engineering.",
     "facts": [
         "<strong>Fun fact:</strong> Every school I have attended has had some type of bird as the mascot (eg. Cardinal, Falcon, Eagle, Golden Eagle)."
-    ]
+    ],
+    "firstName": "Ian",
+    "lastName": "Tannehill"
 }, {
     "id": "rick-tham",
-    "name": "Rick Tham",
     "title": "Director, Technology",
     "image": "http://onenorth.blob.core.windows.net/keystone/rick-tham.jpg",
     "bio": "Rick Tham is the Director of Technology at One North, working to research, test and integrate new technologies for both One North and our clients. Rick is the only Rick at our company…and, yes, this was his fun fact.",
     "facts": [
         "<strong>Favorite movie:</strong> Ferris Bueller's Day Off. Before I moved to Chicago, this movie was my main source of things to do in Chicago.",
         "<strong>What you wanted to be when you were little:</strong> A doctor, but I guess my patients are now just applications. They get sick too."
-    ]
+    ],
+    "firstName": "Rick",
+    "lastName": "Tham"
 }, {
     "id": "erik-thiem",
-    "name": "Erik Thiem",
     "title": "Associate Developer",
     "image": "http://onenorth.blob.core.windows.net/keystone/Eric_F.jpg",
     "bio": "Associate Developer Erik contributes to his team daily, using his skill-set to assure websites function properly as well as continually updating, monitoring and renovating client projects.&nbsp; He works hard to help make certain technology solutions are up to the highest standards to ensure client satisfaction.&nbsp;",
     "facts": ["<strong>Favorite hot sauce</strong>: Cholula Chili Garlic",
         "<strong>Favorite hobbies</strong>: Bicycling, cooking and learning new languages (currently decent at Spanish and attempting to learn French)"
-    ]
+    ],
+    "firstName": "Erik",
+    "lastName": "Thiem"
 }, {
     "id": "jimmy-tsao",
-    "name": "Jimmy Tsao",
     "title": "Senior Front-End Developer",
     "image": "http://onenorth.blob.core.windows.net/keystone/Jimmy-Tsao_BW.jpg",
     "bio": "Jimmy is a Senior One North Front-End Developer with advanced experience in both web development and technical consulting. He solves problems for our clients through appealing web pages and digital design.",
     "facts": [
         "<strong>Favorite season:</strong> Spring because everyone is happier once winter is over.",
         "<strong>Favorite breakfast food:</strong> Ham, egg and cheese on a croissant."
-    ]
+    ],
+    "firstName": "Jimmy",
+    "lastName": "Tsao"
 }, {
     "id": "dom-vespo",
-    "name": "Dom Vespo",
     "title": "Senior Systems Engineer",
     "image": "http://onenorth.blob.core.windows.net/keystone/dom-vespo.jpg",
     "bio": "As a Senior Systems Engineer, Dom is responsible for the configuration, maintenance and 24/7 support of our clients’ digital experiences. He has extensive experience deploying and supporting custom web applications in a production environment. He is also a die-hard White Sox fan (what else do you need to know to love him?).",
     "facts": [
         "<strong>Favorite breakfast food:</strong> Bacon. That is the only acceptable answer.",
         "<strong>What you wanted to be when you were little:</strong> A professional baseball player"
-    ]
+    ],
+    "firstName": "Dom",
+    "lastName": "Vespo"
 }, {
     "id": "matt-weeks",
-    "name": "Matt Weeks",
     "title": "Developer",
     "image": "http://onenorth.blob.core.windows.net/keystone/Matt-Weeks_BW.jpg",
     "bio": "As a Developer at One North, Matt works with a strong knowledge of programming technologies and JavaScript libraries to implement full stack development on new and existing projects.",
     "facts": [
         "<strong>Fun fact:</strong> I love playing music and songwriting. My main instruments are acoustic and electric guitar.",
         "<strong>Favorite movie:</strong> <em>Wolf of Wall Street</em>"
-    ]
+    ],
+    "firstName": "Matt",
+    "lastName": "Weeks"
 }, {
     "id": "chris-wigley",
-    "name": "Chris Wigley",
     "title": "Solutions Architect",
     "image": "http://onenorth.blob.core.windows.net/keystone/Chris-Wigley_BW.jpg",
     "bio": "As a Solutions Architect at One North, Chris provides sound and atypical reasoning to complex problems as well as assistance with analytics, responsive web design, mobile development and performance optimization.&nbsp;With several years of knowledge and expertise in the field, he provides both guidance to his peers and results that both meet and exceed client expectations.",
     "facts": [
         "<strong>Fun fact:</strong> I play guitar/sing. I was in a touring band for seven years during and immediately post-college.",
         "<strong>Favorite color:</strong> Blue"
-    ]
+    ],
+    "firstName": "Chris",
+    "lastName": "Wigley"
 }]

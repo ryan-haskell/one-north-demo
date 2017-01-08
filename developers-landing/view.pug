@@ -9,8 +9,8 @@ block content
                 h1.title.is-1= staticContent.title
                 h2.subtitle.is-3= staticContent.subtitle
 
-    .container
-        p.control.has-icon.has-icon-right(style={"margin": "20px"})
+    .container(style={"padding": "20px"})
+        p.control.has-icon.has-icon-right
             input.input.is-large(
                 type="text"
                 placeholder= staticContent.filterPlaceholder
@@ -20,12 +20,30 @@ block content
             span.icon.is-medium
                 i.fa.fa-search
 
+        p.control.has-addons
+            sort-button( label="First Name"
+                         value="firstName"
+                         v-bind:sort-options="sortOptions"
+                         v-on:sort-by="sortBy" )
+            sort-button( label="Last Name"
+                         value="lastName"
+                         v-bind:sort-options="sortOptions"
+                         v-on:sort-by="sortBy" )
+            sort-button( label="Title"
+                         value="title"
+                         v-bind:sort-options="sortOptions"
+                         v-on:sort-by="sortBy" )
+        hr
+
         ul
             developer-tile( v-for="dev in displayedDevelopers"
                             v-bind:developer="dev" )
 
     script(type="text/x-template" id="developerTileTemplate")
         include views/developer-tile.pug
+
+    script(type="text/x-template" id="sortButtonTemplate")
+        include views/sort-button.pug
 
 
 block scripts
@@ -37,9 +55,49 @@ block scripts
 
             template: '#developerTileTemplate',
 
-            props: ['developer']
+            props: ['developer'],
+
+            computed: {
+
+                fullName: function(){
+                    return this.developer.firstName + ' ' + this.developer.lastName;
+                }
+
+            }
 
         });
+
+        Vue.component('sortButton', {
+
+            template: '#sortButtonTemplate',
+
+            props: ['label', 'value', 'sortOptions'],
+
+            computed: {
+
+                iconClasses: function(){
+
+                    if(this.sortOptions.value == this.value) {
+                        return (this.sortOptions.ascending) ? 'fa fa-sort-alpha-asc' : 'fa fa-sort-alpha-desc'
+                    } else {
+                        return '';
+                    }
+
+                }
+
+            },
+
+            methods: {
+
+                sortBy: function() {
+
+                    this.$emit('sort-by', this.value);
+
+                }
+
+            }
+
+        })
 
         var vm = new Vue({
 
@@ -47,7 +105,11 @@ block scripts
 
             data: {
                 developers: pugData.developers,
-                filterQuery: pugData.filterQuery
+                filterQuery: pugData.filterQuery,
+                sortOptions: {
+                    value: 'firstName',
+                    ascending: true
+                }
             },
 
             computed: {
@@ -59,7 +121,10 @@ block scripts
                     var filteredDevelopers =
                         developers.filter(this.filterDevelopers);
 
-                    return filteredDevelopers;
+                    var filteredAndSortedDevelopers =
+                        filteredDevelopers.sort(this.sortDevelopers);
+
+                    return filteredAndSortedDevelopers;
 
                 }
 
@@ -69,10 +134,28 @@ block scripts
 
                 filterDevelopers: function(developer) {
 
-                    var lowercaseName = developer.name.toLowerCase();
+                    var lowercaseName = this.getFullName(developer).toLowerCase();
                     var lowercaseQuery = this.filterQuery.toLowerCase();
 
                     return lowercaseName.indexOf(lowercaseQuery) > -1;
+
+                },
+
+                sortDevelopers: function(a, b) {
+
+                    var LT = -1, GT = 1, EQ = 0;
+                    var value = this.sortOptions.value,
+                        ascending = this.sortOptions.ascending;
+
+                    var aVal = a[value];
+                    var bVal = b[value];
+
+                    if(aVal < bVal)
+                        return (ascending) ? LT : GT;
+                    else if(aVal > bVal)
+                        return (ascending) ? GT : LT;
+                    else
+                        return EQ;
 
                 },
 
@@ -87,6 +170,25 @@ block scripts
                         window.history.replaceState({}, 'Developers', '/developers?search=' + value);
 
                     }
+
+                },
+
+                sortBy: function(value){
+
+                    if (this.sortOptions.value == value) {
+                        this.sortOptions.ascending = !this.sortOptions.ascending;
+                    } else {
+                        this.sortOptions = {
+                            value: value,
+                            ascending: true
+                        }
+                    }
+
+                },
+
+                getFullName: function(developer) {
+
+                    return developer.firstName + ' ' + developer.lastName;
 
                 }
 

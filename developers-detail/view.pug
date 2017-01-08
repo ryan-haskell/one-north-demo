@@ -6,18 +6,20 @@ block content
     section.hero.is-dark.is-bold.is-medium
         .hero-body
             .container
-                h1.title.is-1= staticContent.developer.name
+                h1.title.is-1= staticContent.developer.firstName + " " + staticContent.developer.lastName
                 h2.subtitle.is-3= staticContent.developer.title
 
     section.hero
         .hero-body
             .container
+                h3.subtitle.is-3
+                    strong= "About " + staticContent.developer.firstName
                 h3.subtitle.is-4!= staticContent.developer.bio
-                hr
                 ul.subtitle.is-4
                     each fact in staticContent.developer.facts
+                        br
                         li!= fact
-                        hr
+                hr
 
 
                 a.button.is-large.is-dark.is-expanded.is-outlined(href="/developers")

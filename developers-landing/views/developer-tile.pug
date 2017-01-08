@@ -1,5 +1,4 @@
-a.box( v-bind:href='"/developers/" + developer.id'
-       style={'margin': '20px'})
+a.box( v-bind:href='"/developers/" + developer.id' )
     article.media
         figure.media-left
             p.image.is-128x128.is-hidden-mobile
@@ -8,5 +7,5 @@ a.box( v-bind:href='"/developers/" + developer.id'
                 img(v-bind:src='developer.image')
         .media-content
             .content
-                h2(v-html="developer.name")
+                h2(v-html="fullName")
                 p(v-html="developer.title")
