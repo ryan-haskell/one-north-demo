@@ -20,7 +20,7 @@ block content
             span.icon.is-medium
                 i.fa.fa-search
 
-        p.control.has-addons
+        p.control.has-addons(style={'overflow': 'auto', 'padding': '1px'})
             sort-button( label="First Name" value="firstName" )
             sort-button( label="Last Name" value="lastName" )
             sort-button( label="Title" value="title" )
@@ -41,7 +41,7 @@ block scripts
         // Vuex Store
         script(text="text/javascript")
             include store.js
-        
+
         // Vue Components
         include developer-tile/index.pug
         include sort-button/index.pug
