@@ -5,13 +5,10 @@ module.exports = function(req, res) {
 
     developersHelper.getAllDevelopers().then(function(developers) {
 
-        var staticContent = {
+        var content = {
             title: 'Developers',
             subtitle: 'Look at these nerds.',
-            filterPlaceholder: 'Find a developer',
-            app: {
-                title: 'One North | Developers'
-            }
+            filterPlaceholder: 'Find a developer'
         };
 
         var data = {
@@ -19,8 +16,12 @@ module.exports = function(req, res) {
             filterQuery: (req.query.search) ? req.query.search : ''
         };
 
+        var app = {
+            title: 'One North | Developers'
+        };
+
         res.render('developers-landing/view',
-            model(staticContent, data));
+            model(content, data, app));
 
     })
 

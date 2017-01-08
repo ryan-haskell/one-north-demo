@@ -1,11 +1,18 @@
-module.exports = function(staticContent, data) {
+module.exports = function(content, data, app) {
+
+    app = (app != undefined) ? app : {};
+
+    app.production = (process.env.NODE_ENV === 'PRODUCTION');
 
     return {
-        staticContent: staticContent || {
-            developer: {},
-            app: {}
+        content: content || {
+            developer: '',
         },
-        data: JSON.stringify(data || {})
+        data: JSON.stringify(data || {
+            developers: [],
+            filterQuery: ''
+        }),
+        app: app
     };
 
 };

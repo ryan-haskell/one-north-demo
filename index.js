@@ -8,6 +8,8 @@ var developersLanding = require('./developers-landing'),
 app.set('views', '.');
 app.set('view engine', 'pug');
 
+app.use(express.static('public'));
+
 app.get('/', function(req, res) {
 
     res.redirect('/developers');

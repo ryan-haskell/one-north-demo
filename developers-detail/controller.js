@@ -5,21 +5,23 @@ module.exports = function(req, res) {
 
     var developerId = req.params.developerId;
 
-    developersHelper.getDeveloperById(developerId).then(function(developer) {
+    developersHelper.getDeveloperById(developerId)
+        .then(function(developer) {
 
-        var staticContent = {
-            developer: developer,
-            app: {
+            var content = {
+                developer: developer
+            };
+
+            var data = {};
+
+            var app = {
                 title: 'One North | ' + (developer.firstName +
                     ' ' + developer.lastName)
-            }
-        };
+            };
 
-        var data = {};
+            res.render('developers-detail/view',
+                model(content, data, app));
 
-        res.render('developers-detail/view',
-            model(staticContent, data));
-
-    });
+        });
 
 };

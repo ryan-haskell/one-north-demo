@@ -6,14 +6,14 @@ block content
     section.hero.is-dark.is-bold.is-medium
         .hero-body
             .container
-                h1.title.is-1= staticContent.title
-                h2.subtitle.is-3= staticContent.subtitle
+                h1.title.is-1= content.title
+                h2.subtitle.is-3= content.subtitle
 
     .container(style={"padding": "20px"})
         p.control.has-icon.has-icon-right
             input.input.is-large(
                 type="text"
-                placeholder= staticContent.filterPlaceholder
+                placeholder= content.filterPlaceholder
                 v-model="filterQuery"
                 v-on:input="onFilterQueryInput($event.target.value)"
                 )
@@ -34,10 +34,6 @@ block content
 
 block scripts
 
-        // Vue Components
-        include developer-tile/index.pug
-        include sort-button/index.pug
-
         // Server-rendered data
         script(type="text/javascript").
             var pugData = !{data};
@@ -45,6 +41,10 @@ block scripts
         // Vuex Store
         script(text="text/javascript")
             include store.js
+        
+        // Vue Components
+        include developer-tile/index.pug
+        include sort-button/index.pug
 
         // Vue App
         script(text="text/javascript")
