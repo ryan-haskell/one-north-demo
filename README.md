@@ -7,14 +7,11 @@
 
 ### How does he do it?
 
-I've uploaded a series of _embarrassingly lengthy_ YouTube videos to walk
-you through the __entire__ design process.
+I've uploaded a series of _embarrassingly_ lengthy videos to walk you through the __entire__ design process.
 
-__Video Topics:__
+__Video Links:__
 
-1. Setting up a NodeJS/Express application form scratch.
-1. Learning Pug for easy templating.
-1. Adding filters and sorts with VueJS.
-1. Using Vuex for better state management.
-
-[MVC + MVU | One North Demo](https://www.youtube.com/playlist?list=PLuGpJqnV9DXpOLsqS00-dvRJp_iNklQ4R)
+1. [MVC with NodeJS](https://www.youtube.com/watch?v=YbKQQkbPE9A&index=1&list=PLuGpJqnV9DXpOLsqS00-dvRJp_iNklQ4R)
+1. [Rendering Views with Pug](https://www.youtube.com/watch?v=EqQj-aYS3nE&index=2&list=PLuGpJqnV9DXpOLsqS00-dvRJp_iNklQ4R&t=535s)
+1. [Advanced Features with VueJS](https://www.youtube.com/watch?v=ZbNuZMAWo-g&index=3&list=PLuGpJqnV9DXpOLsqS00-dvRJp_iNklQ4R&t=2777s)
+1. [Managing State with Vuex](https://www.youtube.com/watch?v=zSd462Dq9Vk&index=4&list=PLuGpJqnV9DXpOLsqS00-dvRJp_iNklQ4R)
