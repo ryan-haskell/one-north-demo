@@ -14,7 +14,7 @@ block content
             input.input.is-large(
                 type="text"
                 placeholder= content.filterPlaceholder
-                v-model="filterQuery"
+                v-bind:value="filterQuery"
                 v-on:input="onFilterQueryInput($event.target.value)"
                 )
             span.icon.is-medium
